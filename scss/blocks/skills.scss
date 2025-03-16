@@ -1,0 +1,36 @@
+.skills{
+    text-align: center;
+    padding: 40px;
+
+    h2{
+        font-size: 48px;
+        font-weight: normal;
+    }
+
+    &__grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 71.5px;
+        margin-top: 60px;
+    }
+
+    &__item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid black;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: bolder;
+        width: 186px;
+        height: 186px;
+
+        img {
+            width: 56px;
+            height: 56px;
+            margin-bottom: 32px;
+            margin-top: 15px;
+        }
+    }
+}

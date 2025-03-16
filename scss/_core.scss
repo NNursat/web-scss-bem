@@ -1,8 +1,9 @@
 /*Basic style*/
 
 body {
-  font-family: 'Roboto', sans-serif;
-  background: #fff
+  font-family: "Sora", sans-serif;
+  background: $better-white;
+  font-weight: bold;
 }
 
 .container {
@@ -10,13 +11,14 @@ body {
 }
 
 .wrap {
-  @include min-max(320px, 1180px);
+  @include min-max(320px, 1280px);
 }
 
 p,
 a,
 button {
   color: #000;
+  text-decoration: none;
 }
 
 img {
