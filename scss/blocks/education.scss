@@ -1,0 +1,14 @@
+.third_screen{
+    background-color: black;
+}
+
+.education{
+    &__title{
+        &-text{
+            color: $better-white;
+            font-size: 48px;
+            text-align: center;
+            
+        }
+    }
+}

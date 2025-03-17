@@ -58,6 +58,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 }
 
 /*Basic style*/
+html {
+  width: auto;
+}
+
 body {
   font-family: "Sora", sans-serif;
   background: #f4f4f5;
@@ -213,6 +217,7 @@ button {
 }
 
 .skills {
+  margin-top: 60px;
   text-align: center;
   padding: 40px;
 }
@@ -222,19 +227,30 @@ button {
 }
 .skills__grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   gap: 71.5px;
   margin-top: 60px;
 }
+.skills__grid div:hover {
+  background-color: black;
+  transition: background-color 0.3s;
+  transition: color 0.3s;
+  color: white;
+}
+.skills__grid div:hover img {
+  filter: brightness(0) invert(1);
+  transition: filter 0.3s;
+}
 .skills__item {
+  transition: background-color 0.3s ease-in-out;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   border: 2px solid black;
-  border-radius: 5px;
-  font-size: 16px;
-  font-weight: bolder;
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: 600;
   width: 186px;
   height: 186px;
 }
@@ -243,6 +259,16 @@ button {
   height: 56px;
   margin-bottom: 32px;
   margin-top: 15px;
+}
+
+.third_screen {
+  background-color: black;
+}
+
+.education__title-text {
+  color: #f4f4f5;
+  font-size: 48px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
