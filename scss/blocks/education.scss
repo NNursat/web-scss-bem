@@ -1,14 +1,76 @@
 .third_screen{
     background-color: black;
+    p{
+        color: $better-white;
+    }
+
 }
 
 .education{
+    margin-top: 60px;
+    padding-top: 60px;
     &__title{
+        margin-bottom: 60px;
         &-text{
             color: $better-white;
             font-size: 48px;
-            text-align: center;
-            
+            text-align: center; 
         }
     }
-}
+    &__list{
+        &-item{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+
+            font-size: 24px;
+            border: 1px solid gray;
+            margin-bottom: 32px;
+            border-radius: 5px;
+
+            padding: 20px;
+
+            &-date{
+                font-weight: 500;
+                color: $better-white;
+                font-size: 16px;
+                text-align: right;
+
+                p{
+                    color: #d4d4d8;
+                }
+            }
+
+            &-name{
+                flex-grow: 1;
+                text-align: left;
+                padding-left: 1rem;
+                font-size: 24px;
+            }
+
+            &-description{
+                width: 100%;
+                margin-top: 1.2%;
+                font-weight: 500;
+                font-size: 16px;
+
+                p{
+                    color: $some-text;
+                }
+            }
+
+            &-logo{
+                width: 3rem;
+            }
+            
+
+            img{
+                filter: grayscale(1) brightness(10);
+            }
+        }
+
+    }
+
+
+}   

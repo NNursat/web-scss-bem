@@ -9,6 +9,7 @@ button {
 .header {    
     display: flex;
     align-items: center;
+    
     font-size: 20px;
     margin-top: 24px;
     margin-bottom: 24px;
@@ -61,8 +62,11 @@ button {
 }
 
 .header__menu{
+    flex-grow: 1;
+    
     &-list{
         display: flex;
+        justify-content: center;
     }
     &-items{
         margin-right: 32px;
@@ -94,10 +98,10 @@ button {
     margin-top: 5%;
     display: flex;
     position: relative;
+
     &__img {
         position: absolute;
-        top: 0;
-        right: 7.5%;
+        top: 0; right: 0;
     }
     
     &__img-man{

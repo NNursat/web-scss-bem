@@ -145,8 +145,12 @@ button {
   display: flex;
 }
 
+.header__menu {
+  flex-grow: 1;
+}
 .header__menu-list {
   display: flex;
+  justify-content: center;
 }
 .header__menu-items {
   margin-right: 32px;
@@ -176,7 +180,7 @@ button {
 .dashboard__img {
   position: absolute;
   top: 0;
-  right: 7.5%;
+  right: 0;
 }
 .dashboard__img-man {
   width: 660px;
@@ -220,6 +224,7 @@ button {
   margin-top: 60px;
   text-align: center;
   padding: 40px;
+  margin-bottom: 60px;
 }
 .skills h2 {
   font-size: 48px;
@@ -264,11 +269,62 @@ button {
 .third_screen {
   background-color: black;
 }
+.third_screen p {
+  color: #f4f4f5;
+}
 
+.education {
+  margin-top: 60px;
+  padding-top: 60px;
+}
+.education__title {
+  margin-bottom: 60px;
+}
 .education__title-text {
   color: #f4f4f5;
   font-size: 48px;
   text-align: center;
+}
+.education__list-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 24px;
+  border: 1px solid gray;
+  margin-bottom: 32px;
+  border-radius: 5px;
+  padding: 20px;
+}
+.education__list-item-date {
+  font-weight: 500;
+  color: #f4f4f5;
+  font-size: 16px;
+  text-align: right;
+}
+.education__list-item-date p {
+  color: #d4d4d8;
+}
+.education__list-item-name {
+  flex-grow: 1;
+  text-align: left;
+  padding-left: 1rem;
+  font-size: 24px;
+}
+.education__list-item-description {
+  width: 100%;
+  margin-top: 1.2%;
+  font-weight: 500;
+  font-size: 16px;
+}
+.education__list-item-description p {
+  color: #d4d4d8;
+}
+.education__list-item-logo {
+  width: 3rem;
+}
+.education__list-item img {
+  filter: grayscale(1) brightness(10);
 }
 
 /*# sourceMappingURL=style.css.map */
