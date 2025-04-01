@@ -360,4 +360,125 @@ button {
   letter-spacing: 1%;
 }
 
+.forms {
+  margin-top: 120px;
+  display: flex;
+  margin-bottom: 60px;
+}
+.forms__left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 20px;
+}
+.forms__left-buttons {
+  display: flex;
+  gap: 24px;
+}
+.forms__left-buttons-links {
+  display: flex;
+  gap: 24px;
+}
+.forms__left-buttons-links a {
+  max-width: 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 16px;
+  transition: background-color 0.3s ease-in-out;
+}
+.forms__left-buttons-links a:hover {
+  background-color: black;
+  transition: background-color 0.3s;
+}
+.forms__left-buttons-links a:hover img {
+  filter: brightness(0) invert(1);
+  transition: filter 0.3s;
+}
+.forms__left-buttons-getintouch {
+  width: 173px;
+  background-color: black;
+  color: #ffffff;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.forms__left-buttons-getintouch p {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-size: 16px;
+  color: white;
+  border: none;
+}
+.forms__left-elements {
+  background-color: #f4f4f5;
+  width: 500px;
+  height: 56px;
+  border: 2px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 18px 24px;
+  font-size: 16px;
+}
+.forms__left .textarea-size {
+  width: 500px;
+  height: 140px;
+  resize: none;
+}
+.forms__left-elements::placeholder {
+  font-family: Sora, sans-serif;
+}
+.forms__right {
+  width: 50%;
+}
+.forms__right-text-title {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+.forms__right-text-description {
+  font-size: 16px;
+  color: grey;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.forms__right-text-email {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+.forms__right-text-number {
+  font-size: 28px;
+}
+.forms__right .outline {
+  font-weight: 700;
+  color: white;
+  -webkit-text-stroke: 2px black;
+}
+
+.footer {
+  background-color: black;
+  height: 88px;
+  align-items: center;
+}
+.footer__logo {
+  gap: 12px;
+  display: flex;
+  width: 140px;
+  padding-top: 25px;
+}
+.footer__logo-img {
+  filter: invert(1);
+}
+.footer__logo-text {
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+}
+.footer__copyright-text {
+  color: white;
+  font-weight: 400;
+  float: right;
+}
+
 /*# sourceMappingURL=style.css.map */
