@@ -458,14 +458,13 @@ button {
 
 .footer {
   background-color: black;
-  height: 88px;
-  align-items: center;
+  padding: 25px 0;
 }
 .footer__logo {
   gap: 12px;
-  display: flex;
   width: 140px;
-  padding-top: 25px;
+  display: flex;
+  align-items: center;
 }
 .footer__logo-img {
   filter: invert(1);
@@ -475,10 +474,22 @@ button {
   font-weight: 500;
   font-size: 20px;
 }
+.footer__copyright {
+  display: flex;
+  align-items: center;
+}
 .footer__copyright-text {
   color: white;
   font-weight: 400;
   float: right;
+  margin-left: auto;
+  white-space: nowrap;
+}
+.footer__wrap {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
