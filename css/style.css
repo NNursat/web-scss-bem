@@ -260,6 +260,7 @@ button {
   height: 186px;
 }
 .skills__item img {
+  filter: brightness(0);
   width: 56px;
   height: 56px;
   margin-bottom: 32px;
@@ -490,6 +491,10 @@ button {
   width: 100%;
   justify-content: space-between;
   align-items: center;
+}
+
+.filler_wws {
+  height: fit-content;
 }
 
 /*# sourceMappingURL=style.css.map */
