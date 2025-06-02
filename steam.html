@@ -8,23 +8,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,100..900,0..100,0..1;1,9..144,100..900,0..100,0..1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/media.css">
+    <link rel="stylesheet" href="/css/hamburger.css">
 </head>
 <body class="container">
-    <section class="first-screen">
+    <section class="first-screen paddings">
         <div class="wrap">
             <header class="header">
                 <a href="index.html" class="header__logo">
                     <img class="header__logoimg" src="/assets/img/logo.svg" alt="logo">
                     <p class="header__near-logo-text">NNursat</p>
                 </a>
-                <nav class="header__menu">
-                    <ul class="header__menu-list">
-                        <li class="header__menu-items"><a href="index.html">About me</a></li>
-                        <li class="header__menu-items"><a href="index.html">Skills</a></li>
-                        <li class="header__menu-items"><a href="index.html">Project</a></li>
-                        <li class="header__menu-items"><a href="index.html">Contact Me</a></li>
-                    </ul>
-                </nav>
+                <nav class="header__menu" id="headerMenu">
+						<ul class="header__menu-list" id="headerMenuList">
+							<li class="header__menu-items"><a href="#">Главная</a></li>
+							<li class="header__menu-items"><a href="#">О нас</a></li>
+							<li class="header__menu-items"><a href="#">Услуги</a></li>
+							<li class="header__menu-items"><a href="#">Портфолио</a></li>
+							<li class="header__menu-items"><a href="#">Контакты</a></li>
+						</ul>
+					</nav>
                 <div class="header__btns">
                     <a href="steam.html">
                     <button class="header__btn1">
@@ -33,27 +36,44 @@
                     </button>
                     </a>
                 </div>
+
+                <button
+                    class="hamburger"
+                    aria-label="Toggle menu"
+                    aria-expanded="false"
+                    aria-controls="headerMenuList">
+                    <span class="hamburger__box">
+                        <span class="hamburger__inner"></span>
+                    </span>
+                </button>
             </header>
         </section>
-            <section class="second_screen">
+            <section class="second_screen paddings">
         <div class="skills">
             <div class="wrap">
             <h2 class="skills__text">
                 Links 4 <b>Steam</b>
             </h2>
             <div class="skills__grid">
-                <a href="https://cybershoke.net/ru"><div class="skills__item"><img src="/assets/steam-img/cybershoke.svg">Cybershoke</div></a>
-                <a href="https://open.spotify.com/"><div class="skills__item"><img src="/assets/steam-img/spotify.svg">Spotify</div></a>
+                <div class="skills__item">
+                    <a href="https://cybershoke.net/ru"></a>
+                    <img src="/assets/steam-img/cybershoke.svg">
+                    <p>Cybershoke</p>
+                </div>
+                <div class="skills__item">
+                    <a href="https://open.spotify.com/"></a>
+                    <img src="/assets/steam-img/spotify.svg">
+                    <p>Spotify</p>
+                </div>
                 <a href="https://google.com"><div class="skills__item"><img src="/assets/steam-img/google.svg">Google</div></a>
                 <a href="https://twitch.tv"><div class="skills__item"><img src="/assets/steam-img/twitch.svg">twitch.tv</div></a>
                 <a href="https://faceitanalyser.com/stats/-ava1/cs2"><div class="skills__item"><img src="/assets/steam-img/faceanal.svg">Faceit Analyser</div></a>
-                <div class="filler_wws"></div>
             </div>
         </div>
     </div>
     </section>
 
-    <section class="servers">
+    <section class="servers paddings">
         <div class="wrap">
         DM
         <br>
@@ -81,4 +101,6 @@
         </div>
     </footer>
 </body>
+
+<script src="/js/scripts.js"></script>
 </html> 
