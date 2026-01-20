@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+@import 'reset';
+@import 'variables';
+@import 'fonts';
+@import 'mixins';
+@import 'core';
+
+@import 'blocks/intro.scss';
+@import 'blocks/skills.scss';
+@import 'blocks/education.scss';
+@import 'blocks/about.scss';
+@import 'blocks/forms.scss';
+@import 'blocks/footer.scss';
+@import 'blocks/steam.scss';

@@ -1,0 +1,40 @@
+.footer{
+    background-color: black;
+    padding: 25px 0;
+    &__logo{
+        gap: 12px;
+        width: 140px;
+        display: flex;
+        align-items: center;
+
+        &-img{
+            filter: invert(1);
+        }
+
+        &-text{
+            color: white;
+            font-weight: 500;
+            font-size: 20px;
+        }
+    }
+
+    &__copyright{
+        display: flex;
+        align-items: center;
+        &-text{
+            color: white;
+            font-weight: 400;
+            float: right;
+            margin-left: auto;
+            white-space: nowrap;
+        }
+    }
+
+    &__wrap{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+

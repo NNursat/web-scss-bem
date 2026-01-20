@@ -1,0 +1,32 @@
+/*Basic style*/
+html{
+  width: auto;
+}
+
+body {
+  font-family: "Sora", sans-serif;
+  background: $better-white;
+  font-weight: bold;
+}
+
+.container {
+  @include min-max(320px, 100%);
+}
+
+.wrap {
+  @include min-max(320px, 1280px);
+
+}
+
+p,
+a,
+button {
+  color: #000;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
